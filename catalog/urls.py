@@ -6,5 +6,5 @@ from catalog.views import control_2
 
 urlpatterns = [
     path(' ', index),
-    path(' ', control_2)
+    path('catalog/', control_2)
 ]
