@@ -1,7 +1,7 @@
 # Register your models here.
 from django.contrib import admin
 
-from catalog.models import Product, Category, Contacts
+from config.catalog.models import Product, Category, Contacts
 
 
 @admin.register(Product)

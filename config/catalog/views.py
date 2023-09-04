@@ -1,6 +1,5 @@
 from django.shortcuts import render
-import json
-from catalog.models import Product, Contacts
+from config.catalog.models import Product, Contacts
 
 
 def index(request):

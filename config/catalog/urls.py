@@ -1,6 +1,6 @@
 from django.urls import path
 
-from catalog.views import index, contacts
+from config.catalog.views import index, contacts
 
 
 
