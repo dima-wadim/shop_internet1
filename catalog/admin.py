@@ -17,3 +17,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Contacts)
 class ContactsAdmin(admin.ModelAdmin):
+    list_display = ('contact_name', 'ph_number', 'message',)
