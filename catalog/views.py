@@ -3,11 +3,11 @@ import json
 from catalog.models import Product, Contacts
 
 
-def home(request):
+def index(request):
     last_products = Product.objects.order_by('-date_create')[:5]
     for product in last_products:
         print(product.product_name)
-    return render(request, 'catalog/home.html')
+    return render(request, 'catalog/index.html')
 
 def contacts(request):
     contact_list = []
