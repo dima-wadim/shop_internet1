@@ -1,0 +1,14 @@
+{% extends 'catalog/base.html' %}
+{% load catalog_tags %}
+{% block content %}
+<div>
+    <div>
+        <h3>{{ object.product_name }}</h3>
+        <p>{{ object.descriptions|slice:100 }}</p>
+        <p>{{ object.date_update }}</p>
+        <p>{{ object.category }}</p>
+        <img src="{% mediapath object.picture %}" alt="{{ object.product_name }}" />
+    </div>
+</div>
+{% endblock %}
+
