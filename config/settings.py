@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "catalog",
+    "biog",
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,16 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 2525
+EMAIL_HOST_USER = "zhdavydova@mail.ru"
+EMAIL_HOST_PASSWORD = "B58fb56fKHL3iS8sNJDb"
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+SERVER_EMAIL = "zhdavydova@mail.ru"
+DEFAULT_FROM_EMAIL = "zhdavydova@mail.ru"
